@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+	<h2> Registered Users </h2>
+	<form action="/" >
+	<input type="submit" value="Home">
+	</form>
+
+</head>
+<body>
+<table border="1" align="left"> 
+<tr> 
+    <td> <canvas id="tut0" width="100" height="20"></canvas><br/> USERNAME</td>
+    <td> <canvas id="tut0" width="100" height="20"></canvas><br/> PASSWORD</td> 
+</tr>
+
+{{range .}}
+<tr> 
+    <td> <canvas id="tut0" width="100" height="20"></canvas><br/> {{.DbUser}}</td>
+    <td> <canvas id="tut0" width="100" height="20"></canvas><br/> {{.DbPass}}</td> 
+</tr>
+{{end}}
+</table>
+
+</body>
+</html>
